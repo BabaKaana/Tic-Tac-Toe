@@ -14,10 +14,11 @@ body{
     height: 60vmin;
     width: 60vmin;
     
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     gap: 1.5rem;
     margin: 0 auto;
     padding: 1.2rem;
@@ -87,4 +88,42 @@ body{
 
 .o-color{
     color: #1E90FF;
+}
+
+
+
+@media (max-width: 500px){
+    .game {
+        width: 70vmin;
+        height: 70vmin;
+        gap: 1.2rem;
+    }
+
+    .box {
+        font-size: 9vmin;
+        width: 18vmin;
+        height: 18vmin;
+    }
+
+    #heading{
+        font-size: 2.5rem;
+    }
+
+    .winnermsg{
+        gap: 2rem;
+    }
+
+    #msg {
+        font-size: 1.4rem;
+    }
+
+    .btn{
+        font-size: 0.8rem;
+        padding: 0.6rem 0.8rem;
+    }
+
+    #resetbtn{
+        margin-top: 2.5rem;
+    }
+
 }
